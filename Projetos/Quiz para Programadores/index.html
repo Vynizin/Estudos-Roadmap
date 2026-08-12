@@ -7,6 +7,8 @@
       name="description"
       content="Um quiz interativo para testar seus conhecimentos!"
     />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/reset.css" />
     <title>Quiz para Programadores</title>
   </head>
   <body>
@@ -85,7 +87,7 @@
             type="text"
             name="pergunta2"
             id="p2"
-            placeholder="Dgite sua Resposta..."
+            placeholder="Digite sua Resposta..."
           />
         </form>
       </section>
@@ -116,16 +118,14 @@
                 de programação?
               </h2>
             </legend>
-            <input type="checkbox" name="pergunta5" id="p5a" /><label for="p5a"
-              >JavaScript</label
-            ><input type="checkbox" name="pergunta5" id="p5b" /><label for="p5b"
-              >HTML</label
-            ><input type="checkbox" name="pergunta5" id="p5c" /><label for="p5c"
-              >Java</label
-            >
-            <input type="checkbox" name="pergunta5" id="p5d" /><label for="p5d"
-              >CSS</label
-            >
+            <label for="p5a">JavaScript</label>
+            <input type="checkbox" name="pergunta5" id="p5a" />
+            <label for="p5b">HTML</label>
+            <input type="checkbox" name="pergunta5" id="p5c" />
+            <label for="p5c">Java</label>
+            <input type="checkbox" name="pergunta5" id="p5d" />
+            <label for="p5d">CSS</label>
+            <input type="checkbox" name="pergunta5" id="p5b" />
           </fieldset>
         </form>
       </section>
@@ -237,7 +237,7 @@
       <section>
         <h2>Nos dê seu Feedback:</h2>
         <form action="">
-          <fieldset>
+          <fieldset class="feedback">
             <legend>Informações para contatos:</legend>
             <div>
               <label for="name">Nome</label>
@@ -265,8 +265,10 @@
       </section>
     </main>
     <footer>
-      <p>Quiz de programação. Todos os direitos reservados &copy;</p>
-      <p>
+      <p class="paragrafo-footer">
+        Quiz de programação. Todos os direitos reservados &copy;
+      </p>
+      <p class="paragrafo-footer">
         Para conhecer outros projetos do criador
         <a href="https://github.com/Vynizin" target="_blank">clique aqui</a>.
       </p>
